@@ -56,7 +56,7 @@ def VALID_OBS():
     for DIR_NAME in all_observations:
         current_obslog = glob.glob(data_dir+DIR_NAME+'/'+'*.obslog')
 
-            #Extract substring that contains obslog relative path
+        #Extract substring that contains obslog relative path
         relative_path = re.findall(r'[/][\d]+[.]obslog', current_obslog[0])[0][1:] 
 
         if relative_path in valid_observations:
@@ -79,7 +79,6 @@ def main(lta_name):
 
         header = pd.read_csv('lta_file.txt',skiprows=skipped_rows,delimiter=r"\s+")
         flux = list(set(header["OBJECT"]))
-        #print flux
 
         header['Nrecs'] = header['Nrecs'].astype(float)
 
@@ -116,11 +115,6 @@ def test_validity():
                 lta_success_file.write(LTA_FILE + '\n' + output + '\n')
                 lta_file_count += 1
                 output_list.append([output, LTA_FILE])
-                """
-                print(LTA_FILE)
-                print output
-                print lta_file_count
-                """
             else:
                 continue
                 ltahdr_error_dir.write(DIR+ '/' + LTA_FILE + '\n') 
