@@ -19,4 +19,4 @@ Compute infrastructure was as follows:
 
 Pipeline figure:
 
-<img src="https://github.com/architsakhadeo/Automated-Hyperparam-Tuning/blob/master/images/exp5.png?raw=true" width="500">
+<img src="https://github.com/architsakhadeo/gadpu/blob/master/images/gadpu.png?raw=true" width="500">
