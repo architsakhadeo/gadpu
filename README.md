@@ -1,16 +1,20 @@
 # GMRT Archive Data Processing Utility
 
+## Tools used
+
+We used the SPAM software for processing the above stages. SPAM (originally developed by Huib Intema) can be downloaded from https://github.com/NCRA-TIFR/gmrt-spam
+
+## Description
+
 This repository contains code for different stages of the data processing pipeline for the NCRA-TIFR GMRT Archive Data Processing Utility. The stages are as follows:
 1) filtering valid LTA data files,
 2) converting LTA data files to UVFITS data files,
 3) precalibrating the UVFITS files,
 4) and finally converting the precalibrated UVFITs data files to scientific quality images stored as FITS files
 
-We used the SPAM software for processing the above stages. SPAM (originally developed by Huib Intema) can be downloaded from https://github.com/NCRA-TIFR/gmrt-spam
-
 This data processing pipeline was deployed on a compute cluster built in-house at NCRA.
 
-Compute infrastructure was as follows:
+## Compute infrastructure
 
 1) Beowolf Cluster architecture
 2) A total of 30 compute nodes and 1 master node.
